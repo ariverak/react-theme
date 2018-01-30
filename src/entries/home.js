@@ -1,6 +1,7 @@
 import React from 'react';
 import {render} from 'react-dom'
-import './home.css'
+import '../styles/main.css'
+import Home from '../pages/containers/home-container'
 
 let app = document.getElementById("app");
-render(<h1>Hello World</h1>,app);
+render(<Home />,app);

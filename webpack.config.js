@@ -7,7 +7,7 @@ module.exports = {
             'react',
             'react-dom'
         ],
-        home: path.resolve(__dirname, 'src/home.js')
+        home: path.resolve(__dirname, 'src/entries/home.js')
     },
     output: {
         path: path.join(__dirname, 'dist'),
@@ -86,6 +86,10 @@ module.exports = {
     },
     watch: true,
     plugins: [
-        new ExtractTextPlugin("./css/[name].css")
+        new ExtractTextPlugin("./css/[name].css"),
+        new webpack.optimize.CommonsChunkPlugin({
+            name : 'vendor',
+            minChunks: Infinity
+        })
     ]
 }
