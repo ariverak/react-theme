@@ -6,6 +6,8 @@ import MdMail from 'react-icons/lib/md/mail';
 import MdStar from 'react-icons/lib/md/star';
 import MdSearch from 'react-icons/lib/md/search';
 import MdToc from 'react-icons/lib/md/toc';
+import MdCheckCircle from 'react-icons/lib/md/check-circle';
+import MdExitToApp from 'react-icons/lib/md/exit-to-app';
 
 const Toolbar = (props)=>{
     return (
@@ -45,7 +47,7 @@ const Toolbar = (props)=>{
     
                             <a href="apps-mail.html" className="shortcut-button btn btn-icon mx-1">
                                 {/* <i className="icon icon-email"></i> */}
-                                <MdMail  size={24} />
+                                <MdMail size={24} />
                             </a>
     
                         </div>
@@ -109,31 +111,31 @@ const Toolbar = (props)=>{
                              id="dropdownUserMenu"
                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div className="avatar-wrapper">
-                                <img className="avatar" src="../../src/assets/images/example_profile.jpg" />
+                                <img className="avatar" src={props.profileImg} />
                                 <i className="status text-green icon-checkbox-marked-circle s-4"></i>
                             </div>
-                            <span className="username mx-3 d-none d-md-block">John Doe</span>
+                            <span className="username mx-3 d-none d-md-block">{props.name}</span>
                         </div>
     
                         <div className="dropdown-menu" aria-labelledby="dropdownUserMenu">
     
                             <a className="dropdown-item" href="#">
                                 <div className="row no-gutters align-items-center flex-nowrap">
-                                    <i className="icon-account"></i>
-                                    <span className="px-3">My Profile</span>
+                                    <MdMail size={24}/>
+                                    <span className="px-3">Mi Perfil</span>
                                 </div>
                             </a>
     
                             <a className="dropdown-item" href="#">
                                 <div className="row no-gutters align-items-center flex-nowrap">
-                                    <i className="icon-email"></i>
-                                    <span className="px-3">Inbox</span>
+                                    <MdMesagge size={24}/>
+                                    <span className="px-3">Mensajes</span>
                                 </div>
                             </a>
     
                             <a className="dropdown-item" href="#">
                                 <div className="row no-gutters align-items-center flex-nowrap">
-                                    <i className="status text-green icon-checkbox-marked-circle"></i>
+                                    <MdCheckCircle size={24} color="green" />
                                     <span className="px-3">Online</span>
                                 </div>
                             </a>
@@ -142,8 +144,8 @@ const Toolbar = (props)=>{
     
                             <a className="dropdown-item" href="#">
                                 <div className="row no-gutters align-items-center flex-nowrap">
-                                    <i className="icon-logout"></i>
-                                    <span className="px-3">Logout</span>
+                                    <MdExitToApp size={24} />
+                                    <span className="px-3">Cerrar Sesión</span>
                                 </div>
                             </a>
     

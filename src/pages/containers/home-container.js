@@ -1,10 +1,13 @@
 import React,{Component} from 'react';
-import Theme from '../../theme/containers/theme-container'
+import ThemeContainer from '../../theme/containers/theme-container'
+import Home from '../components/home'
 
 class HomeContainer extends Component{
     render(){
         return (
-            <Theme />
+            <ThemeContainer>
+                    <Home />
+            </ThemeContainer>
         )
     }
 }
