@@ -2,6 +2,8 @@ import React from 'react';
 import MdArrowBack from 'react-icons/lib/md/arrow-back';
 import MdArrowDropDown from 'react-icons/lib/md/arrow-drop-down';
 import MdDashboard from 'react-icons/lib/md/dashboard';
+import MdLayers from 'react-icons/lib/md/layers';
+import {Link} from 'react-router-dom'
 
 const Sidebar = (props)=>{
     return (
@@ -28,29 +30,38 @@ const Sidebar = (props)=>{
                     <li className="subheader">
                         <span>APPS</span>
                     </li>
-                    <li className="nav-item" role="tab" id="heading-dashboards">
-
+                    <li className="nav-item">
+                            <Link to="/home" className="nav-link ripple">
+                            <i><MdDashboard  size={16}/></i>
+                                <span>Home</span>
+                            </Link>
+                    </li>
+                    <li className="nav-item" role="tab">
                         <a className="nav-link ripple with-arrow " data-toggle="collapse" data-target="#collapse-dashboards" href="#" aria-expanded="true"
                             aria-controls="collapse-dashboards">
-                            <i><MdDashboard  size={16}/></i>
-                            <span>Dashboards</span>
+                            <i><MdLayers  size={16}/></i>
+                            <span>Elements</span>
                             <i><MdArrowDropDown  size={24}/></i>
                         </a>
-
-                        <ul id="collapse-dashboards" className="collapse show" role="tabpanel" aria-labelledby="heading-dashboards" data-children=".nav-item">
+                        <ul id="collapse-dashboards" className="collapse" role="tabpanel" aria-labelledby="heading-dashboards" data-children=".nav-item">
                             <li className="nav-item">
-                                <a className="nav-link ripple active" href="apps-dashboards-project.html" data-page-url="/apps-dashboards-project.html">
-                                    <span>Option 1</span>
-                                </a>
+                                <Link to="alerts" className="nav-link ripple">
+                                    <span>Alerts</span>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link ripple " href="apps-dashboards-server.html" data-page-url="/apps-dashboards-project.html">
-
-                                    <span>Option 2</span>
-                                </a>
+                                <Link to="badges" className="nav-link ripple ">
+                                    <span>Badges</span>
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="buttons" className="nav-link ripple ">
+                                    <span>Buttons</span>
+                                </Link>
                             </li>
                         </ul>
                     </li>
+                   
                 </ul>
             </div>
         </div>

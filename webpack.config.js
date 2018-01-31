@@ -18,7 +18,8 @@ module.exports = {
     devServer: {
         open: true,
         port: 3000,
-        inline: true
+        inline: true,
+        historyApiFallback: true
     },
     module: {
         rules: [

@@ -1,7 +1,7 @@
 import React from 'react';
 import ButtonElement from '../../widgets/elements/buttons/button-element'
 
-const Contact = (props)=>{
+const Buttons = (props)=>{
     return (
          <div>
          <ButtonElement type="primary" text="Hello World Contact" />
@@ -9,4 +9,4 @@ const Contact = (props)=>{
     )
 }
 
-export default Contact;
+export default Buttons;
