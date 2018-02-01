@@ -16,7 +16,7 @@ class App extends Component{
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route path="/home" component={Home} />
-                    <Route path="/buttons" component={Buttons} />
+                    <Route path="/buttons" component={Buttons} /> 
                 </Switch>
             </ThemeContainer>
             </Router>

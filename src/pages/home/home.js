@@ -5,7 +5,7 @@ class Home extends Component{
     render(){
     return (
          <div>
-         <ButtonElement handleClick={this.changePage} type="primary" text="Hello World Home" />
+         <ButtonElement linkTo="buttons" type="primary" text="Hello World Home" />
          </div>
     )
     }
