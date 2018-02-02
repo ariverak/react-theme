@@ -1,8 +1,8 @@
 import React from 'react';
-import image from '../../../assets/images/placeholder.png'
 import ButtonElement from '../buttons/button-element'
 
 const BasicCard = (props)=>{
+    const {image,title,text,buttonText} = props;
     return (
         <div className="card" style={{width: "30rem"}}>
             <img className="card-img-top" src={image} alt={props.title}/>
