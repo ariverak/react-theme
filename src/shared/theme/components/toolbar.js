@@ -8,7 +8,7 @@ import MdSearch from 'react-icons/lib/md/search';
 import MdToc from 'react-icons/lib/md/toc';
 import MdCheckCircle from 'react-icons/lib/md/check-circle';
 import MdExitToApp from 'react-icons/lib/md/exit-to-app';
-import Navbar from '../../widgets/elements/navbar/navbar';
+import Navbar from '../../../widgets/elements/navbar/navbar';
 
 const Toolbar = (props)=>{
     return (

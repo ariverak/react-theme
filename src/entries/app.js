@@ -8,7 +8,7 @@ import {Map as map} from 'immutable'
 import logger from 'redux-logger'
 import {composeWithDevTools} from 'redux-devtools-extension'
 import thunk from 'redux-thunk'
-import App from '../pages/app'
+import App from '../app/app'
 
 
 const store = createStore(reducers, map(), 
