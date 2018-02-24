@@ -9,9 +9,7 @@ import  {BrowserRouter, StaticRouter,Switch,Route} from 'react-router-dom'
 import routes from '../shared/routes'
 
 export default ({server,location,context})=>{
-   
     const routesMap = routes.map((route,i)=>{ return <Route key={i} {...route} />})
-    console.log(routesMap)
     // ClientRouter
     let router = (
         <BrowserRouter>

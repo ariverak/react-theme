@@ -6,7 +6,7 @@ class Home extends Component{
     render(){
     return (
          <div>
-        <Link to="/ui-elements-page">
+         <Link to="/ui-elements-page">
             <ButtonElement linkTo="buttons" type="primary" text="Hello World Home" />
          </Link>
          </div>

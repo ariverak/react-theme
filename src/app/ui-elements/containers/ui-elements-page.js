@@ -1,5 +1,6 @@
 import React from 'react';
 import ButtonElement from '../../../widgets/elements/buttons/button-element'
+import ButtonFab from '../../../widgets/elements/buttons/button-fab'
 import BasicCard from '../../../widgets/elements/cards/basic-card'
 
 const Buttons = (props)=>{
@@ -7,7 +8,12 @@ const Buttons = (props)=>{
     
     return (
          <div>
-         <BasicCard title="Cardview" text={lorem} buttonText="hola" />
+          <ButtonElement />
+          <ButtonFab iconName="add" />
+
+          {/* <BasicCard 
+            image="https://cms-assets.tutsplus.com/uploads/users/41/posts/25951/image/material-design-background-1.jpg"
+            title="Cardview" text={lorem} buttonText="hola" /> */}
          </div>
     )
 }

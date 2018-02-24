@@ -7,7 +7,7 @@ module.exports = {
             'react',
             'react-dom'
         ],
-        home: path.resolve(__dirname, 'src/entries/app.js')
+        app: path.resolve(__dirname, 'src/entries/app.js')
     },
     output: {
         path: path.join(__dirname, 'dist'),

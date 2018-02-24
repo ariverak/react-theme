@@ -1,5 +1,6 @@
 import HomePage from '../app/home/containers/home-page'
 import UIElementsPage from '../app/ui-elements/containers/ui-elements-page'
+import NoFoundPage from '../app/no-found/containers/no-found-page'
 
 const routes = [
     {
@@ -15,6 +16,9 @@ const routes = [
     {
         path : '/ui-elements-page',
         component : UIElementsPage
+    },
+    {
+        component : NoFoundPage
     }
 ]
 

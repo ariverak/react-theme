@@ -2,23 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types'
 
 const ButtonOutline = (props)=>{
-    let {handleClick,type,text,linkTo} = props; 
-    if(linkTo){
-        return (
-            <Link to={linkTo}>
-               <button type="button"
-                className={`btn btn-outline-${props.type} fuse-ripple-ready`}>
-                {props.text}</button>
-            </Link>
-       )
-    }else{
+    const {handleClick,type,text,linkTo} = props; 
         return (
             <button type="button" onClick={handleClick}
              className={`btn btn-outline-${props.type} fuse-ripple-ready`}>
              {props.text}</button>
            )
-    }
-    
 }
 ButtonOutline.propTypes = {
     type : PropTypes.oneOf(["primary","secondary","success","danger",
