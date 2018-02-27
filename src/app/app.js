@@ -3,19 +3,17 @@ import ThemeContainer from '../shared/theme/containers/theme-container'
 import PropTypes from 'prop-types'
 import * as actions from '../actions/index' 
 import { connect } from 'react-redux'
-import Home from './home/containers/home-page'
-import Buttons from './ui-elements/containers/ui-elements-page'
-import  {BrowserRouter, StaticRouter,Switch,Route} from 'react-router-dom'
+import  {BrowserRouter, StaticRouter,Switch,Route,Redirect} from 'react-router-dom'
 import routes from '../shared/routes'
 
 export default ({server,location,context})=>{
-    const routesMap = routes.map((route,i)=>{ return <Route key={i} {...route} />})
+    
     // ClientRouter
     let router = (
         <BrowserRouter>
              <ThemeContainer>
                 <Switch>
-                    {routesMap} 
+                {routes.map((route, i) => <RouteWithSubRoutes key={i} {...route} />)}
                 </Switch>
             </ThemeContainer>
         </BrowserRouter>
@@ -37,3 +35,13 @@ export default ({server,location,context})=>{
         </div>
     )
 }
+
+const RouteWithSubRoutes = route => (
+    <Route
+      path={route.path}
+      render={props => (
+        // pass the sub-routes down to keep nesting
+        <route.component {...props} routes={route.routes} />
+      )}
+    />
+  );
