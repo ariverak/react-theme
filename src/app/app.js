@@ -5,20 +5,21 @@ import * as actions from '../actions/index'
 import { connect } from 'react-redux'
 import  {BrowserRouter, StaticRouter,Switch,Route,Redirect} from 'react-router-dom'
 import routes from '../shared/routes'
-import LoginContainer from '../shared/auth/containers/LoginContainer'
+import AuthContainer from '../shared/auth/containers/AuthContainer'
 
 export default ({server,location,context})=>{
     
     // ClientRouter
     let router = (
-        <BrowserRouter>
-             {/* <ThemeContainer>
-                <Switch>
-                {routes.map((route, i) => <RouteWithSubRoutes key={i} {...route} />)}
-                </Switch>
-            </ThemeContainer> */}
-            <LoginContainer />
-        </BrowserRouter>
+        <AuthContainer />
+        // <BrowserRouter>
+        //      <ThemeContainer>
+        //         <Switch>
+        //         {routes.map((route, i) => <RouteWithSubRoutes key={i} {...route} />)}
+        //         </Switch>
+        //     </ThemeContainer>
+           
+        // </BrowserRouter>
     )
     if(server){
         router (

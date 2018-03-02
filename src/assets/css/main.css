@@ -10581,11 +10581,11 @@ to{background-position:0 0}
 #calendar .page-content #calendar-view.fc .fc-agenda-view .fc-day,#calendar .page-content #calendar-view.fc .fc-agenda-view .fc-week{height:10rem!important}
 #calendar .page-content #calendar-view.fc .fc-agenda-view .fc-widget-content{height:5rem}
 #calendar .page-content #calendar-view.fc .fc-agenda-view .fc-axis{padding-left:2.4rem}
-#profile .page-header{height:32rem;min-height:32rem;max-height:32rem;background:url(../assets/images/placeholder.png) 0 45% no-repeat;background-size:100% auto}
+#profile .page-header{height:32rem;min-height:32rem;max-height:32rem;background:url(../../assets/images/backgrounds/march.jpg) 0 45% no-repeat;background-size:100% auto}
 #profile #timeline-tab-pane .timeline .timeline-item .post-media .media-img,#profile #timeline-tab-pane .timeline .timeline-item .post-media iframe{max-width:100%}
 #profile #photos-videos-tab-pane .period .period-media .media{position:relative;width:200px}
 #profile #photos-videos-tab-pane .period .period-media .media .title{position:absolute;bottom:0;left:0;right:0;z-index:10;background:rgba(0,0,0,.54);color:#fff}
-#login{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;width:100%;min-height:100%;background:url(../assets/images/placeholder.png) no-repeat;background-size:cover;background-attachment:fixed;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
+#login{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;width:100%;min-height:100%;background:url(../../assets/images/backgrounds/march.jpg) no-repeat;background-size:cover;background-attachment:fixed;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
 #login .form-wrapper{width:38.4rem;max-width:38.4rem;background:#fff;text-align:center}
 #login .form-wrapper .logo{width:12.8rem;height:12.8rem;line-height:12.8rem;font-size:8.6rem;font-weight:500;margin:3.2rem auto;color:#fff;-webkit-border-radius:2px;border-radius:2px}
 #login .form-wrapper .title{font-size:1.7rem}
@@ -10608,7 +10608,7 @@ to{background-position:0 0}
 #login .form-wrapper form .btn{width:95%}
 #login .form-wrapper btn.facebook,#login .form-wrapper btn.google{width:80%}
 }
-#login-v2{-webkit-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;width:100%;height:100%;background:url(../assets/images/placeholder.png) no-repeat;background-size:cover;background-attachment:fixed}
+#login-v2{-webkit-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;width:100%;height:100%;background:url(../../assets/images/backgrounds/march.jpg) no-repeat;background-size:cover;background-attachment:fixed}
 #login-v2 .intro .logo{width:12.8rem;height:12.8rem;line-height:12.8rem;font-size:8.6rem;font-weight:500;color:#fff;-webkit-border-radius:2px;border-radius:2px;text-align:center}
 #login-v2 .intro .title{font-size:4.2rem;font-weight:300}
 #login-v2 .intro .description{font-size:1.4rem;max-width:60rem}
@@ -10644,7 +10644,7 @@ to{background-position:0 0}
 #register .form-wrapper form .btn{width:95%}
 #register .form-wrapper .btn.facebook,#register .form-wrapper .btn.google{width:80%}
 }
-#register-v2{-webkit-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;width:100%;height:100%;background:url(../assets/images/placeholder.png) no-repeat;background-size:cover;background-attachment:fixed}
+#register-v2{-webkit-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;width:100%;height:100%;background:url(../../assets/images/backgrounds/august.jpg) no-repeat;background-size:cover;background-attachment:fixed}
 #register-v2 .intro .logo{width:12.8rem;height:12.8rem;line-height:12.8rem;font-size:8.6rem;font-weight:500;color:#fff;-webkit-border-radius:2px;border-radius:2px;text-align:center}
 #register-v2 .intro .title{font-size:4.2rem;font-weight:300}
 #register-v2 .intro .description{font-size:1.4rem;max-width:60rem}
@@ -10668,7 +10668,7 @@ to{background-position:0 0}
 #forgot-password .form-wrapper{padding:1.6rem;padding:2.4rem;width:100%}
 #forgot-password .form-wrapper form .btn{width:95%}
 }
-#reset-password{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;width:100%;min-height:100%;background:url(../assets/images/placeholder.png) no-repeat;background-size:cover;background-attachment:fixed;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
+#reset-password{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;width:100%;min-height:100%;background:url(../../assets/images/backgrounds/december.jpg) no-repeat;background-size:cover;background-attachment:fixed;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
 #reset-password .form-wrapper{width:38.4rem;max-width:38.4rem;background:#fff;text-align:center}
 #reset-password .form-wrapper .logo{width:12.8rem;height:12.8rem;line-height:12.8rem;font-size:8.6rem;font-weight:500;margin:3.2rem auto;color:#fff;-webkit-border-radius:2px;border-radius:2px}
 #reset-password .form-wrapper .title{font-size:1.7rem}
