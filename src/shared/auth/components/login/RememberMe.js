@@ -1,6 +1,4 @@
 import React from 'react'
-import './remember.css'
-import {LOGIN_TEXTS} from '../../../constants'
 import {Link} from 'react-router-dom'
 import MdCheckbox from "react-icons/lib/md/check-box"
 import MdCheckboxOutline from "react-icons/lib/md/check-box-outline-blank"
@@ -16,11 +14,11 @@ const RememberMe = (props) =>(
                 <MdCheckboxOutline onClick={props.handleRemember} size={25} color="gray" />
                 }
             </div>
-            <span className="form-check-description">{LOGIN_TEXTS.remember}</span>
+            <span className="form-check-description">{props.rememberText}</span>
         </label>
     </div>
       <Link className="forgot-password text-secondary mb-4" to="reset">
-        {LOGIN_TEXTS.forgotPassword}
+         {props.forgotText}
       </Link>
     </div>
 );
